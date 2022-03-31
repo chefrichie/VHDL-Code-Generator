@@ -1,5 +1,5 @@
 # VHDL Code Generator
 
-## "When Life Gives You VHDL Porgramming, Use This!!!!" - KDG
+## "When Life Gives You VHDL Porgramming, Use VHDL Code Generator!!!!" - KDG
 
 ### 🤣 🤣 🤣 🤣 
