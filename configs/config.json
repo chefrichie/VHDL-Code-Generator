@@ -1,0 +1,6 @@
+{
+    "entity_name" : "and_gate",
+    "input_ports" : ["a","b"],
+    "output_ports" : ["f"],
+    "Boolean_Function_String" : ["a and b"]
+}
