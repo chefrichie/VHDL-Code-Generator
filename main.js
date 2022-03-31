@@ -1,6 +1,6 @@
 const fs = require('fs');
+const path = require('path');
 
-// import Design from './src/design'
 const Design = require('./src/design/design.js')
 
 function read_from_file(filename){
@@ -31,6 +31,10 @@ function read_from_file(filename){
     
         const o1 = new Design(entity_name,input_array,output_array,boolean_function_strings);
         generated_design_code = o1.CODE;
+
+        if (!fs.existsSync('./res')) {
+            fs.mkdirSync('./res');
+        }
 
         fs.mkdirSync(`./res/${entity_name}`);
 
