@@ -2,5 +2,7 @@
     "entity_name" : "and_gate",
     "input_ports" : ["a","b"],
     "output_ports" : ["f"],
-    "Boolean_Function_String" : ["a and b"]
+    "Boolean_Function_String" : ["a and b"],
+    "wait_duration" : "10 ns",
+    "input_values_array" : [[0,0],[0,1],[1,0],[1,1]]
 }

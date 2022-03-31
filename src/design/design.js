@@ -20,26 +20,26 @@ class Design{
 
         for (let i of this.input_array)
         {
-            this.CODE += `\t${i} : in STD_LOGIC;\n`
+            this.CODE += `\t${i} : in std_logic;\n`
         }
 
         for (let i of this.output_array)
         {
-            this.CODE += `\t${i} : out STD_LOGIC;\n`
+            this.CODE += `\t${i} : out std_logic;\n`
         }
 
         this.CODE += `);\nend ${this.entity_name};\n\n\n`;
 
 
 
-        this.CODE += `architecture Behavioral of ${this.entity_name} is\nbegin\n`;
+        this.CODE += `architecture behav of ${this.entity_name} is\nbegin\n`;
         
         for(let i = 0;i<this.output_array.length;i++)
         {
             this.CODE += `${this.output_array[i]} <= ${this.boolean_function_strings[i]};\n`;
         }
     
-        this.CODE += 'end Behavioral;\n';
+        this.CODE += 'end behav;\n';
         
         return this.CODE;
     }
